@@ -2,6 +2,7 @@ export enum AgentType {
   LoadRunner,
   JMeter,
   CustomAI,
+  Claude,
 }
 
 export enum TestStatus {

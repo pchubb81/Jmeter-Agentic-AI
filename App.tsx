@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LoadRunnerAgent from './components/LoadRunnerAgent';
 import JMeterAgent from './components/JMeterAgent';
 import CustomAIAgent from './components/CustomAIAgent';
+import ClaudeAgent from './components/ClaudeAgent';
 import { AgentType } from './types';
 
 const App: React.FC = () => {
@@ -15,6 +16,8 @@ const App: React.FC = () => {
         return <JMeterAgent />;
       case AgentType.CustomAI:
         return <CustomAIAgent />;
+      case AgentType.Claude:
+        return <ClaudeAgent />;
       default:
         return null;
     }
@@ -47,6 +50,7 @@ const App: React.FC = () => {
 
         <nav className="flex justify-center space-x-2 md:space-x-4 mb-8">
           <TabButton agent={AgentType.JMeter} label="JMeter AI Agent" />
+          <TabButton agent={AgentType.Claude} label="Claude Agent" />
           <TabButton agent={AgentType.LoadRunner} label="LoadRunner Agent" />
           <TabButton agent={AgentType.CustomAI} label="Custom AI Agent" />
         </nav>
