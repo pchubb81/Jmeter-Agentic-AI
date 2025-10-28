@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AI Performance Testing Agent",
+  "description": "An AI-powered performance testing agent to trigger LoadRunner scenarios, interact with custom AI platforms, and generate JMeter test plans using Gemini.",
+  "requestFramePermissions": []
+}
